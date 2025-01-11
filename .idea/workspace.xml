@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ebf3199-be0b-46ed-974e-3d6b56e58766" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Backend/GymManagement/src/main/java/com/fitness/gymmanagement/models/Attendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/GymManagement/src/main/java/com/fitness/gymmanagement/models/Attendance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/GymManagement/src/main/java/com/fitness/gymmanagement/models/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/GymManagement/src/main/java/com/fitness/gymmanagement/models/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/GymManagement/src/main/java/com/fitness/gymmanagement/models/Payments.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/GymManagement/src/main/java/com/fitness/gymmanagement/models/Payments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/GymManagement/src/main/java/com/fitness/gymmanagement/models/WorkoutPlans.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/GymManagement/src/main/java/com/fitness/gymmanagement/models/WorkoutPlans.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2rSwtobaUPdajnhBh3aVKRPJJ4G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java_Solutions/Gym_Management/Backend/GymManagement"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ebf3199-be0b-46ed-974e-3d6b56e58766" name="Changes" comment="" />
+      <created>1736566002229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736566002229</updated>
+    </task>
+    <servers />
+  </component>
+</project>
