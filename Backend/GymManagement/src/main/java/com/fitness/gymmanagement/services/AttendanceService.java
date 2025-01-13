@@ -1,6 +1,7 @@
 package com.fitness.gymmanagement.services;
 
 import com.fitness.gymmanagement.models.Attendance;
+import com.fitness.gymmanagement.models.Member;
 import com.fitness.gymmanagement.repository.AttendanceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,7 @@ public class AttendanceService {
         return attendanceRepository.findById(id).get();
     }
 
-    public Attendance findByDate(LocalDate date) {return attendanceRepository.findByDate(date); }
+    public Attendance findByMember(Member member) {return attendanceRepository.findByMember(member); }
 
     public Attendance save(Attendance attendance) {
 //        System.out.println(attendance.getDate()+" "+attendance.getStatus()+" "+attendance.getMember());

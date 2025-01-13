@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public class Attendance {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id")
     private long id;
 
@@ -32,6 +32,10 @@ public class Attendance {
     @Enumerated(EnumType.STRING)
     @Column(name="status", nullable=false)
     private AttendanceStatus status;
+    
+    public long getId() {
+        return id;
+    }
 
     public Member getMember() {
         return member;

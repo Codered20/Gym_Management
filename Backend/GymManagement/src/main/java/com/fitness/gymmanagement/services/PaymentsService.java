@@ -1,5 +1,6 @@
 package com.fitness.gymmanagement.services;
 
+import com.fitness.gymmanagement.models.Member;
 import com.fitness.gymmanagement.models.Payments;
 import com.fitness.gymmanagement.repository.PaymentsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,5 +28,9 @@ public class PaymentsService {
 
     public void deletePayment(Long id) {
         paymentsRepository.deleteById(id);
+    }
+    
+    public Payments findByMember(Member member) {
+    	return paymentsRepository.findByMember(member);
     }
 }
