@@ -23,6 +23,7 @@
   }
 }
 
+/* For footer bar */
 .footer{
   position: absolute !important;
   display: flex !important;
