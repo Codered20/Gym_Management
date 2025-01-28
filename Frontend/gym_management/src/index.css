@@ -4,7 +4,7 @@
   display: flex !important;
   flex-direction: row !important;
   /* background-color: rgba(255, 255, 255, 0.2) !important; */
-  margin: 0 0 !important;
+  margin: 10 0 !important;
   top: 0;
   left: 0;
   min-height: 5vh !important;
@@ -24,29 +24,81 @@
 }
 
 /* For footer bar */
-.footer{
-  position: absolute !important;
-  display: flex !important;
-  flex-direction: row !important;
-  /* background-color: rgba(255, 255, 255, 0.2) !important; */
-  margin: 0 0 !important;
+.footer {
+  position: fixed !important;  /* Fixed position at the bottom */
   bottom: 0;
   left: 0;
-  min-height: 5vh !important;
-  width: 100vw !important;
-  flex-wrap: wrap !important;
-  div{
-    padding: 1%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    /* min-width: 8%; */
-    color: white !important;  
-    font-size: 100%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  }
+  width: 100vw !important;     /* Full width */
+  min-height: 5vh !important;  /* Minimum height */
+  display: flex !important;    /* Flex layout */
+  flex-direction: row !important;
+  flex-wrap: wrap !important;  /* Allow wrapping */
+  margin: 0;                   /* Remove any margin */
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Optional background color */
 }
+
+.footer div {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  /* Corrected from justify-items to justify-content */
+  color: white !important;
+  font-size: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.quote {
+  min-height: fit-content;
+  width: 99vw;
+  transform: translate(-8%);
+  padding: 3%;
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  color: black;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 70%;
+  margin-top: 2%;
+  margin-left: 0;  /* Ensure no margin is pushing it to the right */
+  margin-right: 0; /* Ensure no margin on the right as well */
+  box-sizing: border-box; /* This ensures padding is included in the element's width */
+}
+
+.zumba{
+  min-height: fit-content;
+  width: 99vw;
+  transform: translate(-8%);
+  padding: 3%;
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  color: black;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 90%;
+  margin-top: 2%;
+  margin-left: 0;  /* Ensure no margin is pushing it to the right */
+  margin-right: 0; /* Ensure no margin on the right as well */
+  box-sizing: border-box; /* This ensures padding is included in the element's width */
+}
+
+.generateQuote {
+  background-color: white;
+  color: blue;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 100%;
+}
+
+.generateQuote:hover {
+  background-color: blue;
+  color: white;
+}
+
 
 :root {
   margin: 0;
@@ -67,10 +119,14 @@ body {
   /* Background image */
   background-image: url("https://i.ytimg.com/vi/vXVw9sG_zO0/maxresdefault.jpg");
   background-size: cover;
+  background-attachment: fixed; /* Prevents the background image from scrolling */
   flex-direction: row;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
+
 
 h1 {
   font-size: 3.2em;
