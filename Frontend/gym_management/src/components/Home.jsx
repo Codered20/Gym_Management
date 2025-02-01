@@ -1,5 +1,8 @@
 import React from 'react';
-import Zumba from './zumba';
+import Zumba from './HomepageComponents/zumba';
+import ZumbaScroller from './HomepageComponents/zumbaScroller';
+import Crossfit from './HomepageComponents/Crossfit';
+import Gym from './HomepageComponents/Gym';
 
 function HomePage() {
   const [quote, setQuote] = React.useState("");
@@ -72,19 +75,20 @@ function HomePage() {
       <div
         style={{
           backgroundImage: `url(${image})`,
-          backgroundSize: "contain",
+          backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           transform: "translate(-8%, 0)",
           width: "99vw",
-          height: "50vh",
+          height: "70vh",
           borderRadius: "100px",
           marginTop: "5%"
         }}
       />
-      <p>react</p>
       <Zumba/>
-      
+      <ZumbaScroller/>
+      <Crossfit/>
+      <Gym/>
     </>
   );
 }
