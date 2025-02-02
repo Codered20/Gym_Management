@@ -50,7 +50,7 @@ function ZumbaScroller() {
         display: "flex",
         overflow: "hidden",
         width: "99vw",
-        transform: "translate(-8%)",
+        // transform: "translate(-8%)",
         whiteSpace: "nowrap",
         marginTop: "5%",
         marginBottom: "2%"

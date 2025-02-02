@@ -28,7 +28,7 @@ function HomePage() {
       ];
       const animeImages = {
         "Naruto": "https://staticg.sportskeeda.com/editor/2022/08/53e15-16596004347246.png?w=640",
-        "One Piece": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvviZpEYl0exMhEOBGkpQcQWsqzvNjVmGkzw&s",
+        "One Piece": "https://wallpapercave.com/wp/wp2056932.jpg",
         "Hunter x Hunter": "https://i0.wp.com/iwatchitall.com/wp-content/uploads/2022/06/quotes-ging-1.jpg.webp",
         "Haikyuu!!": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/06/haikyuu-the-dumpster-battle-review.jpg",
         "Bleach": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTqHRasUC01W0_dk6LVZSxMVwG8MwGqvtfzg&s",
@@ -75,10 +75,10 @@ function HomePage() {
       <div
         style={{
           backgroundImage: `url(${image})`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "70% 90%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          transform: "translate(-8%, 0)",
+          // transform: "translate(-8%, 0)",
           width: "99vw",
           height: "70vh",
           borderRadius: "100px",

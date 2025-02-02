@@ -1,14 +1,15 @@
 /* For top navigation bar */
 .topBar {
-  position: absolute !important;
+  position: fixed !important;
   display: flex !important;
   flex-direction: row !important;
-  margin: 7px 0 !important;
+  margin: 0 0 !important;
   top: 0;
   left: 0;
   min-height: 5vh !important;
   width: 100vw !important;
   flex-wrap: wrap !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Optional background color */
 }
 
 .topBar div {
@@ -57,7 +58,7 @@
 .quote {
   min-height: fit-content;
   width: 99vw;
-  transform: translate(-8%);
+  /* transform: translate(-8%); */
   padding: 3%;
   align-items: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -66,7 +67,7 @@
   background-color: white;
   border-radius: 100px;
   opacity: 70%;
-  margin-top: 2%;
+  margin-top: 10vh;
   margin-left: 0;  /* Ensure no margin is pushing it to the right */
   margin-right: 0; /* Ensure no margin on the right as well */
   box-sizing: border-box; /* This ensures padding is included in the element's width */
@@ -75,7 +76,7 @@
 .zumba{
   min-height: fit-content;
   width: 99vw;
-  transform: translate(-8%);
+  /* transform: translate(-8%); */
   padding: 3%;
   align-items: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -96,10 +97,11 @@
   background-color: antiquewhite;
   opacity: 85%;
   width: 99vw;
-  transform: translate(-8%);
+  /* transform: translate(-8%); */
   border-radius: 20px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
+  margin-bottom: 4%;
 }
 
 .crossfit {
@@ -111,7 +113,7 @@
   height: fit-content; /* Ensures it isn't too small */
   width: 99vw; /* More responsive width */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  transform: translate(-8%);
+  /* transform: translate(-8%); */
   background-color: white;
   opacity: 85%;
   margin: 3.5% auto;
@@ -140,10 +142,78 @@
   
 }
 
-/* .z_scroll{
+.login_form {
+  width: 20vw;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.login_form div {
+  /* width: 20vw; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.login_form button{
+  background-color: blue;
+  
+}
+
+.login_form button:hover{
+  background-color: #ccc;
+}
+
+.register {
+  display: flex;
+  flex-direction: row;
+  color: black !important; /* Ensure text color applies */
+  justify-content: space-between; /* Push first and last div to the edges */
+  width: 100%; /* Ensure full width */
+  height: 100%
+}
+
+.register div {
+  font-size: small;
+  color: black !important; /* Force text color to black */
+  display: flex; /* Make divs flex containers */
+  align-items: center; /* Center items vertically */
+}
+
+/* Styling for links inside .register div */
+.register div a {
+  color: black;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.register div a:hover {
+  color: cornflowerblue;
+}
+
+/* Push the last div to the right */
+.register div:last-child {
+  margin-left: auto; /* This pushes it to the right */
+  display: flex;
+  text-align: right; /* Align text inside it to the right */
+}
+
+
+
+
+input {
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+.z_scroll{
   min-height: fit-content;
-  width: 99vw;
-  transform: translate(-8%);
+  width: 100vw;
+  /* transform: translate(-8%); */
   background-color: #535bf2;
   border-radius: 100px;
   overflow-x: auto;
@@ -164,11 +234,6 @@
   color: white;
 }
 
-
-:root {
-  margin: 0;
-}
-
 a {
   font-weight: 500;
   color: white;
@@ -181,6 +246,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
   /* Background image */
   background-image: url("https://i.ytimg.com/vi/vXVw9sG_zO0/maxresdefault.jpg");
   background-size: cover;
@@ -209,23 +276,4 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: black;
-  }
-  button {
-    background-color: rgb(0, 0, 0);
-  }
-}
