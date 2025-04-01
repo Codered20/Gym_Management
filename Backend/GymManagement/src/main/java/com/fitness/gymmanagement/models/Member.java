@@ -17,11 +17,15 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class Member {
-
+	
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "member_id")
     private long id;
+    
+    @JsonProperty("name")
+    @Column(name ="name", nullable=false)
+    private String name;
 
     @JsonProperty("age")
     @Column(name = "age", nullable = false)
@@ -35,8 +39,20 @@ public class Member {
     @JsonProperty("contact")
     @Column(name = "contact_info", nullable = false, unique = true)
     private String contact;
+    
+    @JsonProperty("password")
+    @Column(name = "password", nullable = false)
+    private String password;
 
-    public long getId() {
+    public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public long getId() {
         return id;
     }
 

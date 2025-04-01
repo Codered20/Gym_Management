@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
     <div className='footer'>
       <div>
-        <a href="#">Contact Us</a>
+        <Link to="/contact">Contact Us</Link>
       </div>
       <div>
-        <a href="#">Our Trainers</a>
+        <Link to="/trainers">Our Trainers</Link>
       </div>
       <div>
-        <a href="#">Our Services</a>
+        <Link to="/services">Our Services</Link>
       </div>
     </div>
   )

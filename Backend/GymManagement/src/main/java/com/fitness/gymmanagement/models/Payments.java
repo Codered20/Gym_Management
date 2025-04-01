@@ -2,7 +2,6 @@ package com.fitness.gymmanagement.models;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.boot.json.JsonWriter;
 
 import java.time.LocalDate;
 

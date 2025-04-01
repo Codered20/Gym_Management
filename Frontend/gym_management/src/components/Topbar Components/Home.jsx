@@ -1,8 +1,8 @@
 import React from 'react';
-import Zumba from './HomepageComponents/zumba';
-import ZumbaScroller from './HomepageComponents/zumbaScroller';
-import Crossfit from './HomepageComponents/Crossfit';
-import Gym from './HomepageComponents/Gym';
+import Zumba from '../HomepageComponents/zumba';
+import ZumbaScroller from '../HomepageComponents/zumbaScroller';
+import Crossfit from '../HomepageComponents/Crossfit';
+import Gym from '../HomepageComponents/Gym';
 
 function HomePage() {
   const [quote, setQuote] = React.useState("");
@@ -72,19 +72,7 @@ function HomePage() {
         {/* <button onClick={generateQuote} className="generateQuote">Generate New Quote</button> */}
       </div>
 
-      <div
-        style={{
-          backgroundImage: `url(${image})`,
-          backgroundSize: "70% 90%",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          // transform: "translate(-8%, 0)",
-          width: "99vw",
-          height: "70vh",
-          borderRadius: "100px",
-          marginTop: "5%"
-        }}
-      />
+      <div className='img-container'> <img src ={image}/></div>
       <Zumba/>
       <ZumbaScroller/>
       <Crossfit/>

@@ -47,13 +47,9 @@ function ZumbaScroller() {
     <div
       ref={sliderRef}
       style={{
-        display: "flex",
         overflow: "hidden",
-        width: "99vw",
-        // transform: "translate(-8%)",
         whiteSpace: "nowrap",
-        marginTop: "5%",
-        marginBottom: "2%"
+        marginTop: "2rem",
       }}
     >
       {/* Duplicate images for seamless infinite scroll */}
